@@ -15,12 +15,6 @@ class NodeList extends Component{
         };
     }
 
-    // addPushAnimation(){
-    //     this.setState({
-    //         pushNodeClassName : "pushNodeAnimation"
-    //     });
-    // }
-
     removePushAnimation(){
         this.setState({
             pushNodeClassName : ""
@@ -72,7 +66,7 @@ class NodeList extends Component{
         }, 1000)
         
     }
-    
+
     render(){
         return(
             <div className= "NodeListControl">

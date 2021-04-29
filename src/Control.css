@@ -19,6 +19,7 @@
 .Push input{
     outline: none;
     height: 40px;
+    width: 130px;
     color: white;
     margin-left: 10px;
     font-size: 1rem;

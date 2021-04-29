@@ -16,12 +16,23 @@ function Control(props){
     )
 
     function push(){
+        var stackHeight= document.querySelectorAll(".Node").length;
+        
+        if(stackHeight === 7)
+        alert("Stack is full...");            
+        else
         props.push(); 
         document.querySelector(".Push input").value= "";
     }
-
+    
     function pop(){
-        props.pop(); 
+        var stackHeight= document.querySelectorAll(".Node").length;
+
+        if(stackHeight === 0)
+            alert("Stack is empty...");            
+
+        else
+            props.pop(); 
     }  
 }
 
