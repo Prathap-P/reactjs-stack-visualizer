@@ -1,0 +1,39 @@
+.Node{
+    border: 1px white solid;
+    height: 70px;
+    width: 70px;
+    color:white;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes removeNode{
+    50%{
+        transform: scale(0.5, 0.5);
+    }
+    100%{
+        transform: scale(0, 0);
+    }
+}    
+
+.popNodeAnimation{
+    animation : removeNode 1s linear 0s 1 forwards;
+}
+
+@keyframes pushNode{
+    0%{
+        transform: scale(0, 0);
+    }
+    50%{
+        transform: scale(0.5, 0.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}    
+
+.pushNodeAnimation{
+    animation : pushNode 1s linear 0s 1 forwards;
+}

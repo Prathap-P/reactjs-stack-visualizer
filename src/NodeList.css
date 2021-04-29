@@ -1,0 +1,9 @@
+.NodeListControl{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.NodeList{
+    margin: 10px;
+    align-self: flex-end;
+}

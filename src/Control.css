@@ -1,0 +1,29 @@
+.Control{
+    margin: 10px;
+    align-self:center;
+}
+
+.Push, .Pop{
+    padding: 10px;
+}
+
+.Push button, .Pop button{
+    height: 40px;
+    width: 70px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: 2px white solid;
+    border-radius: 15px;
+}
+
+.Push input{
+    outline: none;
+    height: 40px;
+    color: white;
+    margin-left: 10px;
+    font-size: 1rem;
+    background-color: rgb(20, 20, 20);
+    border-width: 0px 0px 1px 0px ;
+    border-style: solid;
+    border-color: white;
+}
