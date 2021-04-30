@@ -1,8 +1,11 @@
 .App{
     background-color: rgb(20, 20, 20);
     min-height: 100vh;
+    min-width: 100vw;
     display: grid;
     grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -21,4 +24,11 @@
     border-bottom: 4px solid white;
     animation: smallToLarge 0.8s linear 0s 1 forwards;
     align-self:flex-start;
+}
+
+@media(max-width: 450px){
+    .heading{
+        margin:  1rem 0.8rem 0.8rem;
+        font-size: 2rem;
+    }
 }

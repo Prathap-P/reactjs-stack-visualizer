@@ -28,3 +28,20 @@
     border-style: solid;
     border-color: white;
 }
+
+@media(max-width: 450px){
+    .Control{
+        margin: 6px;
+    }
+
+    .Push button, .Pop button{
+        height: 30px;
+        width: 50px;
+        border-radius: 10px;
+    }
+    
+    .Push input{
+        height: 30px;
+        width: 100px;
+    }
+}

@@ -9,6 +9,13 @@
     align-items: center;
 }
 
+@media(max-width: 450px){
+    .Node{
+        height: 50px;
+        width: 50px;
+    }
+}
+
 @keyframes removeNode{
     50%{
         transform: scale(0.5, 0.5);

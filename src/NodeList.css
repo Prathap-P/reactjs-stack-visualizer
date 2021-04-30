@@ -1,4 +1,5 @@
 .NodeListControl{
+    grid-row: 2 / auto;
     display: grid;
     grid-template-columns: auto auto;
 }
