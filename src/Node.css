@@ -26,7 +26,7 @@
 }    
 
 .popNodeAnimation{
-    animation : removeNode 1s linear 0s 1 forwards;
+    animation : removeNode 700ms linear 0s 1 forwards;
 }
 
 @keyframes pushNode{
@@ -42,5 +42,5 @@
 }    
 
 .pushNodeAnimation{
-    animation : pushNode 1s linear 0s 1 forwards;
+    animation : pushNode 700ms linear 0s 1 forwards;
 }

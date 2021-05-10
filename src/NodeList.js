@@ -1,4 +1,4 @@
-import {React, Component} from 'react';
+import React, {Component} from 'react';
 import './NodeList.css';
 import Node from './Node.js';
 import Control from './Control.js';
@@ -9,10 +9,13 @@ class NodeList extends Component{
         super(props);
         this.props= props;
         this.state= {
-            nodeList : ["9", "89"],
+            nodeList : ["1", "0"],
             popNodeClassName : "",
             pushNodeClassName : ""
         };
+
+        this.pushInputRef= React.createRef();
+        this.nodeListRef= React.createRef();
     }
 
     removePushAnimation(){
@@ -22,7 +25,8 @@ class NodeList extends Component{
     }
 
     pushNode(){
-        var valToPush= document.querySelector(".Push input").value;
+        var valToPush= this.pushInputRef.current.value;
+
         if(valToPush.trim() === "")
             return;
 
@@ -63,14 +67,14 @@ class NodeList extends Component{
             () => {
                 this.removePopAnimation();
             })
-        }, 1000)
+        }, 550)
         
     }
 
     render(){
         return(
             <div className= "NodeListControl">
-                <div class= "NodeList">
+                <div className= "NodeList" ref= {this.nodeListRef}>
                     {this.state.nodeList.map((value, index) => {
                         if(index === 0)
                             return <Node nodeVal= {value} popNodeClassName= {this.state.popNodeClassName} pushNodeClassName= {this.state.pushNodeClassName} />
@@ -79,7 +83,7 @@ class NodeList extends Component{
                     })}
                 </div>
 
-                <Control push= {this.pushNode.bind(this)} pop= {this.popNode.bind(this)}/>
+                <Control push= {this.pushNode.bind(this)} pop= {this.popNode.bind(this)} nodeListRef= {this.nodeListRef} ref= {this.pushInputRef} />
             </div>
         )
     }
