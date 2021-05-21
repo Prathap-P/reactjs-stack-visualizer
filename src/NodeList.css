@@ -2,9 +2,25 @@
     grid-row: 2 / auto;
     display: grid;
     grid-template-columns: auto auto;
+    transform: translateX(12%);
 }
 
 .NodeList{
     margin: 10px;
     align-self: flex-end;
+    animation: nodeListAnimation 600ms linear 0s 1 forwards;
+}
+
+@keyframes nodeListAnimation{
+    0%{
+        transform: translateX(-60%);
+    }
+    
+    50%{
+        transform: translateX(-25%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
 }
