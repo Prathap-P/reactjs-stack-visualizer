@@ -8,7 +8,12 @@
 .NodeList{
     margin: 10px;
     align-self: flex-end;
-    animation: nodeListAnimation 600ms linear 0s 1 forwards;
+}
+
+@media(min-width:750xp){
+    .NodeList{
+        animation: nodeListAnimation 600ms linear 0s 1 forwards;
+    }
 }
 
 @keyframes nodeListAnimation{
