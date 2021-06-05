@@ -10,7 +10,7 @@
     align-self: flex-end;
 }
 
-@media(min-width:750xp){
+@media(min-width:750px){
     .NodeList{
         animation: nodeListAnimation 600ms linear 0s 1 forwards;
     }
